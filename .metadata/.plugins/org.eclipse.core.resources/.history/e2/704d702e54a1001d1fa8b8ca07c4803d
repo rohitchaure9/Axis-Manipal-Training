@@ -1,0 +1,11 @@
+package com.axis;
+
+public class Employee{
+	int id;
+	String name;
+	
+	public void displayEmployeeInfo() {
+		System.out.println("Id "+id);
+		System.out.println("Name "+name);
+	}
+}

@@ -1,0 +1,9 @@
+package com.axis.client;
+
+public class ProductClient {
+	public static void main(String[] args) {
+		//tells about the beans and the container
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+	}
+
+}

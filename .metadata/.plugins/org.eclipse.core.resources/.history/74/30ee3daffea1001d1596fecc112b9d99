@@ -1,0 +1,13 @@
+package com.axis.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ProductService {
+	public void productServicelayer() {
+		
+		ProductDao productDao;
+		
+		System.out.println("Writing business logic.");
+	}
+}

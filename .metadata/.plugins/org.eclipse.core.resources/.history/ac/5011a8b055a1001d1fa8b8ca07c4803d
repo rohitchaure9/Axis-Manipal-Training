@@ -1,0 +1,10 @@
+package com.axis.client;
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class MyClient1{
+	public static void main(String[] args) {
+		Resource resource = new ClassPathResource("beans.xml");
+	}
+}

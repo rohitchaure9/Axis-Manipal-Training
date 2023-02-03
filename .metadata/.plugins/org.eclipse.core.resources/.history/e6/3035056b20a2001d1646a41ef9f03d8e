@@ -1,0 +1,16 @@
+package com.axis.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Employee {
+	private int id;
+	private String name;
+	private int salary;
+	private String dept;
+	private int age;
+	
+	private Employee() {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package com.axis.dao;
+
+public class ProductDao {
+	public void databaseLayer() {
+		System.out.println("Use to access the data from database.");
+	}
+
+}
