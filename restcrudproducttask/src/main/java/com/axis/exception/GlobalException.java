@@ -33,4 +33,15 @@ public class GlobalException {
 		return new ResponseEntity<ErrorInfo>(errorInfo, HttpStatus.BAD_REQUEST);
 	}
 	
+	@ExceptionHandler(InValidCategoryException.class)
+	ResponseEntity<ErrorInfo> myException(InValidCategoryException exception)
+	{
+		ErrorInfo errorInfo = new ErrorInfo();
+		errorInfo.setErrorMessage(exception.getMsg());
+		errorInfo.setStatus(HttpStatus.BAD_REQUEST.toString());
+		errorInfo.setLocalDateTime(LocalDateTime.now());
+		
+		return new ResponseEntity<ErrorInfo>(errorInfo, HttpStatus.BAD_REQUEST);
+	}
+	
 }
