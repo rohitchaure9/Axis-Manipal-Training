@@ -24,6 +24,10 @@ public class ProductServiceImpl implements ProductService{
 		{
 			throw new InValidPriceException("Enter price in positive.");
 		}
+		else if(product.getCategory<0 && product.getCategory>3)
+		{
+			throw new InValidCategoryException("Enter a valid category.");
+		}
 	    return productRepository.save(product);
 	}
 
