@@ -44,6 +44,11 @@ public class ProductController {
 		return exception.getMsg();
 	}
 	
+	@ExceptionHandler(InValidCategoryException.class)
+	public String myCategoryException(InValidCategoryException exception) {
+		return exception.getMsg();
+	}
+	
 	@ExceptionHandler(InValidPriceException.class)
 	public String myPriceException(InValidPriceException exception) {
 		return exception.getMsg();
