@@ -60,5 +60,10 @@ public class ProductController2 {
 	ResponseEntity<String> myPriceException(InValidPriceException exception){
 		return new ResponseEntity<String> (exception.getMsg(),HttpStatus.BAD_REQUEST);
 	}
+	
+	@ExceptionHandler(InValidCategoryException.class)
+	ResponseEntity<String> myCategoryException(InValidCategoryException exception){
+		return new ResponseEntity<String> (exception.getMsg(),HttpStatus.BAD_REQUEST);
+	}
 
 }
